@@ -16,7 +16,7 @@ def solve_maze():
 
 
 def free_turtle():
-    new_maze_solver.free()
+    new_maze_solver.tur_reset()
 
 
 r = IntVar()
@@ -65,7 +65,7 @@ button_frame.pack(pady=20)
 solve_button = Button(button_frame, text="CREATE AND SOLVE", font="TimesNewRoman, 15", command=solve_maze)
 solve_button.pack(padx=50, side=LEFT)
 
-free_turtle_button = Button(button_frame, text="FREE TURTLE", font="TimesNewRoman, 15", command=free_turtle)
+free_turtle_button = Button(button_frame, text="RESET TURTLE", font="TimesNewRoman, 15", command=free_turtle)
 free_turtle_button.pack(side=RIGHT)
 
 if __name__ == "__main__":

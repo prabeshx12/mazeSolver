@@ -4,7 +4,7 @@ from collections import deque
 from tkinter import messagebox
 
 
-class Maze(turtle.Turtle):  # define a Maze class
+class Maze(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
         self.shape("square")
@@ -199,8 +199,8 @@ def endProgram():
     window.exitonclick()
 
 
-def free():
-    window.bye()
+def tur_reset():
+    turtle.reset()
 
 
 def search(x, y):
@@ -273,6 +273,7 @@ def setup_screen():
 
 def start_solving(value):
     setup_screen()
+
     global maze, yellow, blue, green, white, walls, path, visited, frontier, solution
     maze = Maze()
     yellow = Yellow()
