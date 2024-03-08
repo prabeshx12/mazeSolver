@@ -1,6 +1,5 @@
 import turtle
 import time
-import sys
 from collections import deque
 from tkinter import messagebox
 
@@ -197,12 +196,11 @@ def setup_maze(grid):
 
 
 def endProgram():
-    wn.exitonclick()
-    sys.exit()
+    window.exitonclick()
 
 
 def free():
-    wn.bye()
+    window.bye()
 
 
 def search(x, y):
@@ -266,11 +264,11 @@ def backTrack(x, y):
 
 
 def setup_screen():
-    global wn
-    wn = turtle.Screen()
-    wn.bgcolor("black")
-    wn.title("Maze Solving")
-    wn.setup(1300, 700)
+    global window
+    window = turtle.Screen()
+    window.bgcolor("black")
+    window.title("Maze Solving")
+    window.setup(1300, 700)
 
 
 def start_solving(value):
