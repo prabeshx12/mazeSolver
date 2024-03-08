@@ -246,7 +246,7 @@ def search(x, y):
             green.goto(x, y)
             green.stamp()
         except:
-            messagebox.showerror("Error", "Path couldn't ne searched!!")
+            messagebox.showerror("Error", "Path couldn't be searched!!")
 
 
 def backTrack(x, y):

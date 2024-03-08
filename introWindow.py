@@ -17,7 +17,7 @@ def solve_maze():
 
 def free_turtle():
     new_maze_solver.tur_reset()
-
+    
 
 r = IntVar()
 
